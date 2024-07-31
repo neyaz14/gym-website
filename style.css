@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: rgb(255, 218, 124);
+    height: 48vw;
+}
+
+main{
+    background: rgb(255, 243, 173);
+    height: 48vw;
+}
