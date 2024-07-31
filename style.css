@@ -1,14 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 header{
-    background: rgb(255, 218, 124);
-    height: 48vw;
+    height:715px ;
+    
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
+    background: linear-gradient( rgb(3, 3, 3), rgba(21, 21, 21, 0.9) 100%);
 }
 
+/* nav bar  */
+.nav{
+    max-width: 1094px;
+    /* border: 1px solid firebrick; */
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title{
+    color: rgb(255, 85, 0);
+    font-family: Inter;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+
+
+/* nav bar --> list */
+.navbar>ul{
+    list-style: none;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.503);
+    border-radius: 39px;
+    width: 446px;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar > ul > li{
+    color: #ffff;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.navbar > ul > li:hover{
+    width: 92px;
+    height: 38px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* -----  header section  -------- */
+
+.header{
+/* border: 2px solid rgb(15, 227, 15); */
+    max-width: 1094px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 27.8px;
+}
+
+.header-content{
+    width: 520px;
+    height: 440px;
+}
+
+
+.header-title{
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 4.8rem;
+    font-weight: 900;
+}
+/* to fix   shape   text design */
+#shape{
+    font-family: Great Vibes;
+    font-weight: 100;
+    font-size: 6.8rem;
+}
+.header-content >p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Inter;
+
+    margin: 28px 0;
+}
+.btn-1{
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Inter;
+
+    border-radius: 42px;
+    border: none;
+    background: rgb(230, 83, 60);
+    width: 170px;
+    height: 45px;
+    margin-right: 14px;
+}
+.btn-2{
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Inter;
+
+    border-radius: 42px;
+    background: none;
+    border: 1px solid #ffff;
+    width: 170px;
+    height: 45px;
+    
+}
+
+.header-img{
+    /* border: 1px solid darkblue; */
+    position: relative;
+}
+/* img  */
+.header-img> img{
+    width: 349px;
+    height: 580px;
+}
+/* img er card  */
+
+/* 1st card  jeta first e bosbe */
+.header-img-card-1{
+    width: 190px;
+    height: 96px;
+    background: rgb(136, 136, 136);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: -65px;
+    top: 145px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, .1);
+
+}
+.header-img-card-1 p{
+    color: rgba(239, 237, 232, 0.65);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+}
+#card-number-1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+}
+
+/* card 2 jeta last e bosbe */
+.header-img-card-2{
+    width: 200px;
+    height: 94px;
+    background: rgb(70, 70, 70);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    position: absolute;
+    bottom: 75px;
+    left: -110px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, .1);
+
+}
+.header-img-card-2 p{
+    color: rgba(239, 237, 232, 0.65);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+#card-number-2{
+    color: rgb(250, 250, 249);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 900;
+
+}
+.card-2-circle{
+    background: rgb(230, 83, 60);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main{
-    background: rgb(255, 243, 173);
     height: 48vw;
+    /* border: 4px solid deeppink; */
 }
