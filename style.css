@@ -19,7 +19,7 @@ header{
 /* nav bar  */
 .nav{
     max-width: 1094px;
-    /* max-width: 90%; */
+    max-width: 80%;
     /* border: 1px solid firebrick; */
     margin: 0 auto;
     padding-top: 57px;
@@ -87,6 +87,20 @@ header{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----  header section  -------- */
 
 .header{
@@ -114,7 +128,7 @@ header{
 .header-title{
     color: #ffffff;
     font-family: Inter;
-    font-size: 4.8rem;
+    font-size: 4.6rem;
     font-weight: 900;
 }
 /* to fix   shape   text design */
@@ -194,14 +208,14 @@ header{
 .header-img-card-1 p{
     color: rgba(239, 237, 232, 0.65);
     font-family: Inter;
-    font-size: 13px;
+    font-size: .8rem;
     font-weight: 400;
     text-align: left;
 }
 #card-number-1{
     color: rgb(255, 255, 255);
     font-family: Inter;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
     text-align: left;
 }
@@ -269,6 +283,9 @@ header{
     .header-content{
         margin: 0 auto;
     }
+    .header-title{
+        font-size: 1.9rem;
+    }
 
    
 /* to fix   nav bar */
@@ -326,6 +343,7 @@ header{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         height: 1230px;
+        height: auto;
     }
     .navbar{
         display: none;
@@ -343,9 +361,36 @@ header{
     .nav{
         margin-bottom: 15px;
     }
-   
+    
+
+
+
+
+
+
+    
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+
+        margin: 0 auto;
+        margin-left: 0 ;
+        padding-left: 0;
+    }
+    .header-title{
+        font-size: 3rem;
+    }
+    #shape{
+        font-size: 3rem;
+    }
     .header-btn{
         display: flex;
+    }
+    .btn-1, .btn-2{
+        width: 169px;
+        height: 54px;
     }
 
     /* to fix cards */
@@ -365,6 +410,8 @@ header{
         position: absolute;
         left: 190px;
         top: 47px;
+
+        width: 165px;
     }
 
     .header-img-card-2{
@@ -590,10 +637,10 @@ main{
 }
 
 .run-description{
-    max-width: 50%;
+    /* max-width: 50%; */
     margin: 0 auto;
     margin-left: 54px;
-    /* width: 463px; */
+    width: 463px;
 }
 .run-description h3{
     color: #ffffff;
@@ -638,7 +685,8 @@ main{
 @media screen and (max-width:576px) {
     .run-section{
         /* width: 353px; */
-        height: 690px;
+        width: auto;
+        height: 550px;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
@@ -650,35 +698,59 @@ main{
     .run-description{
 /* border: 2px solid tomato; */
         width: 290px;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-margin: 0 auto;
-        margin-bottom: 25px;
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
     .run-description h3,p{
-        text-align: left;
+        /* text-align: left; */
+        width: 80%;
+    }
+    .run-description h3{
+        font-size: 1.8rem;
+    }
+    .run-description p{
+        font-size: .8rem;
     }
     #btn{
         width: 290px;
     }
     .run-img{
         margin: 0 auto;
-        width: 287px;
-        height: 170px;
-        display: flex;
-        justify-content:center;
     }
     .run-img img{
         margin-top: 40px;
-        width: 290px;
+        width: 320px;
         height: 170px;
         margin: 0 auto;
         border-radius: 15px;
-        margin-bottom: 35px; 
+        margin-bottom: 15px; 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -701,10 +773,12 @@ margin: 0 auto;
     margin: 0 auto;
     padding-top: 45px;
     
+    
 }
 
 .for-bmi-background{
     background: rgb(34, 34, 34);
+    height: auto;
 }
 
 
@@ -713,6 +787,9 @@ margin: 0 auto;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bmi-description h3{
@@ -734,7 +811,7 @@ margin: 0 auto;
 /* to fix chart and calculator */
 .bmi-content{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 0 auto;
     gap: 50px;
     justify-content: space-between;
@@ -783,7 +860,7 @@ tr{
 
 /*  to fix the calculator */
 .calculator{
-    width: 50%;
+    /* width: 50%; */
     height: auto;
 
     /* width: 567px; */
@@ -791,21 +868,26 @@ tr{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* align-items: center; */
+    align-items: center;
 }
 
+.calc-description{
+    width: 490px;
+}
 .calc-description h3{
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 1.7rem;
     font-weight: 900;
     text-align: center;
+    margin-bottom: 15px;
 }
 .calc-description p{
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: .8rem;
     text-align: center;
+    margin-bottom: 25px;
 }
 
 
@@ -894,6 +976,68 @@ tr{
         margin-top: 35px;
 
 }
+
+
+
+
+/* for smalll devices */
+
+@media screen and (max-width:576px) {
+    .bmi-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        gap: 20;
+    }
+    .bmi-div{
+        height: 850px;
+    }
+
+
+    .calc-description{
+        width: 100%;
+    }
+    .calc-description h3{
+        font-size: 1.5rem;
+    }
+    .calc-description p{
+        font-size: .7rem;
+    }
+        
+    #height{
+        width: 170px;
+        font-size: .8rem;
+    }
+
+    #weight{
+        width: 170px;
+        font-size: .8rem;
+    }
+
+    #age{
+        width: 170px;
+        font-size: .8rem;
+    }
+
+    #gender{
+        width: 170px;
+        font-size: .8rem;
+    }
+
+    #activity{
+        width: 350px;
+        font-size: .8rem;
+    }
+
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -1060,6 +1204,274 @@ tr{
 
 
 
+
+/*       membership   form */
+
+.become-member{
+ 
+    background: rgba(255, 255, 255, 0.1);
+
+    width: 80%;
+    height: auto;
+    height: 600px;
+    height: auto;
+    margin:  0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    border-radius: 18px;
+    margin-bottom: 50px;
+}
+
+
+.member-section-description{
+    width: 100%;
+}
+
+.member-section-description h3{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.member-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 150px;
+
+
+    margin: 0 auto;
+}
+
+.form-row-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 40%; */
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+
+#name, #age-2, #bmi-score{
+    width: 370.5px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.148);
+
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    margin:  0 auto;
+    padding-left: 10px;
+}
+
+
+
+
+.form-row-2 h5 , .form-row-1 h5{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#months{
+
+    width: 370.5px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.148);
+
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    margin:  0 auto;
+
+    margin-top: 50px;
+
+}
+
+
+/*  price cards */
+.price-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    gap: 40px;
+
+
+    margin: 50px 0;
+}
+.price-card-1{
+    border: 1px solid rgb(255, 85, 0);
+
+    width: 300px;
+    height: 390px;
+    border-radius: 12px;
+    padding: 20px 40px;
+    background: rgb(230, 83, 60);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    /* box-shadow: ; */
+
+
+}
+.price-card-1 h5{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: .9rem;
+    margin: 10px 0;
+}
+.price-card-1 li{
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1rem;
+    margin: 10px 0;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+
+.dollar{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    
+}
+
+.price{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+.price-text{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: .9rem;
+    margin: 10px 0;
+}
+
+.price-card-1 h5, p{
+    text-align: center;
+
+}
+.price-card-1 hr{
+    width: 100%;
+
+    margin: 20px 0;
+}
+
+
+#no{
+    color: #ffffff89;
+}
+
+.btn-3{
+    margin-top: 30px;
+
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Inter;
+
+
+
+
+    border-radius: 42px;
+    border: none;
+    background: rgba(254, 254, 254, 0.304);
+    width: 180px;
+    height: 55px;
+    /* padding: 5px 0; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for small devices */
+
+@media screen and (max-width:576px) {
+    .become-member{
+        width: 93%;
+    }
+    .member-div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .member-form{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-content: center;
+
+    }
+    .form-row-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+   
+
+    .price-cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        margin-top: 60px;
+    }
+
+    
+    
+}
+
+
+
+
 /* ---- Footer section ----- */
 
 footer{
@@ -1120,7 +1532,7 @@ footer{
 
 .second-section a, .third-section a{
     text-decoration: none;
-    color: rgb(255, 255, 255, .5);
+    color: rgba(134, 134, 134, 0.5);
     font-family: Inter;
     font-size: 23px;
     text-align: left;
@@ -1137,7 +1549,7 @@ footer{
     border: 2px solid rgb(250, 250, 250, .1);
 }
 .last p{
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(52, 52, 52, 0.816);
     font-family: Inter;
     font-size: 20px;
     text-align: center;
