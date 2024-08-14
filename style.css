@@ -686,6 +686,219 @@ margin: 0 auto;
 
 
 
+/* --  BMI section -- */
+
+.bmi-section{
+    max-width: 100vw;
+    height: auto;
+    
+    margin-top: 100px;
+
+}
+
+.bmi-div{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 45px;
+    
+}
+
+.for-bmi-background{
+    background: rgb(34, 34, 34);
+}
+
+
+/* to fix section top heading */
+.bmi-description{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.bmi-description h3{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.bmi-description p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: .8rem;
+    text-align: center;
+}
+
+
+/* to fix chart and calculator */
+.bmi-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+/* to fix the table  */
+.chart{
+    width: 40%;
+}
+.chart table, tr, td, th{
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+table{
+    width: 310px;
+    height: 216px;
+}
+
+caption{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 52px;
+}
+
+th{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+tr{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*  to fix the calculator */
+.calculator{
+    width: 50%;
+    height: auto;
+
+    /* width: 567px; */
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+
+.calc-description h3{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-align: center;
+}
+.calc-description p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: .8rem;
+    text-align: center;
+}
+
+
+.row-1, .row-2{
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+
+#height{
+    width: 230px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: .9rem;
+    padding: 12px 40px 12px 20px;
+
+}
+
+#weight{
+    width: 230px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: .9rem;
+    padding: 12px 40px 12px 20px;
+}
+
+#age{
+    width: 230px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: .9rem;
+    padding: 12px 40px 12px 20px;
+
+}
+
+#gender{
+    width: 230px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: .9rem;
+    padding: 12px 40px 12px 20px;
+}
+
+#activity{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 471px;
+    height: 48px;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: .9rem;
+    padding: 12px 40px 12px 20px;
+}
+
+/* for button */
+
+.btn{
+    
+        color: #ffff;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: Inter;
+        border-radius: 42px;
+        border: none;
+        background: rgb(230, 83, 60);
+        width: 224px;
+    height: 54px;
+        
+        margin-top: 35px;
+
+}
+
+
+
+
+
 /* -----   team  section  ----- */
 
 .team-section{
@@ -711,14 +924,14 @@ margin: 0 auto;
 .team-description h3{
     color: #ffffff;
     font-family: Inter;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
     margin-bottom: 14px;
 }
 .team-description p{
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
-    font-size: 14px;
+    font-size: .8rem;
     font-weight: 400;
 }
 
